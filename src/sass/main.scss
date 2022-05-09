@@ -1,7 +1,15 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// BASE
+@import './base/common';
+
+// LAYOUT
+@import './layout/header';
+@import './layout/main-section';
+@import './layout/common-styles-for-sections';
+@import './layout/for-whom-section';
+@import './layout/about-uz-section';
+@import './layout/plan-section';
+@import './layout/rezult-section';
+
+// COMPONENTS
+@import './components/separator-block';
