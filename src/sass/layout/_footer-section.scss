@@ -1,0 +1,97 @@
+footer {
+  background-color: #0B0B0B;
+  color: white;
+}
+
+.container-footer {
+  margin: 0 55px;
+}
+
+.footer-mainInfo {
+  padding-top: 103px;
+  margin-bottom: 141px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.footer-mainInfoItem-name:not(:last-child) {
+margin-bottom: 15px;
+}
+
+
+.footer-mainInfoList {
+  display: flex;
+}
+
+.footer-mainInfoItem-group-name {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130.5%;
+}
+
+.footer-mainInfoItem:not(:last-child) {
+margin-right: 181px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 27px;
+}
+
+.goToConsultation {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.goToConsultation-title {
+  margin-right: 50px;
+}
+
+.goToConsultation-btn {
+padding: 9px 18px;
+background-color: #C7B79E;
+  border-radius: 2px;
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 130.5%;
+    /* identical to box height, or 21px */
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+  
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+.footer-copyright {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-lang {
+  display: flex;
+  margin-left: 72px;
+}
+
+.change-lang {
+  margin-right: 50px;
+}
+
+.copyright {
+  margin: 0 auto;
+}
