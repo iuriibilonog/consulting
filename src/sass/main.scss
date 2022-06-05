@@ -2,6 +2,9 @@
 // BASE
 @import './base/common';
 
+//UTILS
+@import './utils/vissually-hidden';
+
 // LAYOUT
 @import './layout/header';
 @import './layout/main-section';
@@ -14,3 +17,5 @@
 
 // COMPONENTS
 @import './components/separator-block';
+@import './components/scrollUp';
+@import './components/bigModal';
