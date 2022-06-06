@@ -6,9 +6,19 @@
           <use href="./images/sprite.svg#icon-cross"></use>
         </svg>
       </button>
-      <iframe class="bigModalBody" style="background-color: transparent;"
-        src="https://docs.google.com/forms/d/e/1FAIpQLScA9gjxcKqCyxee4OdyOZHzfQP5fXKVgSNERnteFjh8mz0zhA/viewform?embedded=true"
-        width="800" height="900" frameborder="0" marginheight="0" marginwidth="0">Завантаження…</iframe>
+        <h3 class="modal-title">Укажите, пожалуйста, Ваши данные</h3>
+        <form class="bigModal-form" id="formElem">
+          <input type="text" class="input-modal" placeholder="Имя" required>
+          <input type="number" class="input-modal" placeholder="Телефон" required>
+          <input type="email" class="input-modal" placeholder="Email" required>
+          <div class="check-rules">
+            <input class="check-box" type="checkbox">
+            <span class="rules">Я согласен(-на) на обработку персональных данных</span>
+          </div>
+          <button type="submit" class="submit-bigModal">Заказать звонок</button>
+        </form>
+
+      
       <!-- <iframe class="hero__video" width="560" height="315" src="https://www.youtube.com/embed/-8MPE74pq4w"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

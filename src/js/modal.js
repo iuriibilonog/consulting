@@ -1,3 +1,7 @@
+import axios from 'axios';
+
+const url = process.env.API;
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-bigModal-open]'),
@@ -15,4 +19,19 @@
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
+})();
+
+(() => {
+  formElem.onsubmit = async e => {
+    e.preventDefault();
+
+    let response = await axios.post(`${url}/api/contact`, {
+      method: 'POST',
+      body: new FormData(formElem),
+    });
+
+    let result = await response.json();
+
+    alert(result.message);
+  };
 })();

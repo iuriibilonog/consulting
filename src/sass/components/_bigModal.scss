@@ -1,9 +1,4 @@
-.bigModal {
-  max-width: 700px;
-  max-height: 370px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-}
+
 
 .backdrop {
   position: fixed;
@@ -25,26 +20,86 @@
 .bigModal {
   position: absolute;
   display: flex;
-  padding: 40px;
+  justify-content: center;
+  max-width: 600px;
+ 
+  background-color: #0E0E0E;
+  padding: 70px 116px;
   flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // width: 96vw;
-  // height: 96vh;
-  // max-width: 450px;
-  // max-height: 609px;
   overflow: auto;
-  background-color: var(--bg-product-one-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
   z-index: 3;
 }
 
-.bigModalBody {
-  background: #C7B79E;
+.bigModal-form {
+  text-align: center;
 }
+
+.modal-title {
+  margin-bottom: 80px;
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 171.69%;
+  text-align: center;
+    color: #FFFFFF;
+}
+
+.input-modal {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 10px;
+  width: 346px;
+  color: #FFFFFF;
+}
+
+.input-modal:focus {
+  outline: none;
+}
+
+.input-modal::placeholder {
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+   
+  
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-modal:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+
+.check-rules {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 53px;
+}
+
+.check-box {
+  width: 25px;
+  height: 25px;
+}
+
+.rules {
+  margin-left: 12px;
+  text-align: left;
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 
 .close-modal {
   padding: 0;
@@ -54,23 +109,35 @@
   right: 8px;
   height: 30px;
   width: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  fill: #FFFFFF;
   background-color: transparent;
+  border: none;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    fill: var(--accent-text-color);
+    fill:#C7B79E;
   }
+}
+
+.submit-bigModal {
+  padding: 13px 89px;
+  background-color: #C7B79E;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 171.69%;
+      color: #FFFFFF;
 }
 
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1280px) {
-  .bigModal {
-    max-width: 528px;
-    max-height: 581px;
-  }
+  // .bigModal {
+  //   max-width: 528px;
+  //   max-height: 581px;
+  // }
 }
 
