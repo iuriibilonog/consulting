@@ -19,7 +19,7 @@
 
 
 .left-side_main {
-  height: 1028px;
+  // height: 1028px;
   width: calc(100vw/ 2);
   background: rgba(0, 0, 0, 0.7);
 
@@ -81,6 +81,11 @@
   line-height: 16px;
   
   color: rgba(239, 237, 238, 0.8);
+}
+
+.main_part_secondary-text-decor {
+  text-transform: uppercase;
+  color: #C7B79E;
 }
 
 .main_part-btn {
@@ -179,5 +184,88 @@ color: #EFEDEE;
 
 .main-decor-social-item:not(:last-child) {
 margin-bottom: 35px;
+}
+
+@media screen and (max-width: 767px) {
+ 
+  .title__main_part {
+      padding-top: 115px;
+      padding-left: 30px;
+      font-family: 'Open Sans';
+    font-weight: 400;
+      font-size: 42px;
+      line-height: 57px;
+      letter-spacing: 0;
+  
+    }
+    .left-side_main {
+          // height: 1028px;
+          // width: calc(100vw - 100vw/3);
+          width: 70%;
+        }
+
+        .main_part-btn {
+          margin-bottom: 144px;
+        }
+
+    .right-side_main {
+
+   
+    // width: calc(100vw / 3);
+    width: 30%;
+    }
+    .main_part {
+          
+          margin-left: 0px;
+        }
+
+                .right__main_part {
+                  margin-left: 30px;
+                }
+    .main_part_text {
+          margin-bottom: 90px;
+          width: 236px;
+         
+        font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          
+        
+          letter-spacing: 0.02em;
+
+        }
+
+                .main-decor-list-item {
+        
+                  width: 40px;
+                  
+                }
+        
+        
+        
+                .main-decor-list-item:not(:last-child) {
+                  margin-right: 15px;
+        
+                }
+
+                 .container-main-section {
+                   // position: relative;
+                   margin: 0 20px 0 0;
+                   
+                 }
+
+                 .left__main_part {
+                  display: none;
+                 }
+
+                .main_part_secondary-text {
+                  width: 236px;
+                }
+
+                .main-decor-social-list {
+                
+                  margin-top: 75px;
+                  
+                 }
 }
 

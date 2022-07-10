@@ -8,13 +8,20 @@
   height: 100%;
   z-index: 2;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  // background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(32, 31, 29, 0.7);
+    backdrop-filter: blur(16px);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.logoModal {
+  margin: 0 auto;
+  margin-top: 70px;
 }
 
 .bigModal {
@@ -132,12 +139,85 @@
       color: #FFFFFF;
 }
 
-@media screen and (min-width: 768px) {}
+.messageAfterSendContacts {
+  background-color: transparent;
+  max-width: 100%;
+  text-align: center;
+  
+  
+}
 
-@media screen and (min-width: 1280px) {
-  // .bigModal {
-  //   max-width: 528px;
-  //   max-height: 581px;
-  // }
+
+
+.messageAfterSendContacts-title {
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130.5%;
+    
+    letter-spacing: 0.05em;
+  
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.messageAfterSendContacts-text {
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130.5%;
+    
+    letter-spacing: 0.02em;
+  
+    color: #C7B79E;
+    margin-bottom: 60px;
+}
+
+.messageAfterSendContacts-button {
+  background-color: #C7B79E;
+  padding: 13px 60px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 171.69%;
+  color: #FFFFFF;
+}
+
+// @media screen and (min-width: 768px) {}
+
+// @media screen and (min-width: 1280px) {
+ 
+// }
+
+@media screen and (max-width: 767px) {
+  .bigModal {
+      padding: 55px 22px;
+    }
+
+    .messageAfterSendContacts-title {
+     
+      font-size: 28px;
+      
+    }
+  
+    .messageAfterSendContacts-text {
+     
+      font-size: 24px;
+      
+    }
+  
+    .messageAfterSendContacts-button {
+      
+      padding: 13px 18px;
+      
+      font-size: 14px;
+      
+      
+    }
 }
 

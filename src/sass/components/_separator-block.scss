@@ -2,3 +2,10 @@
   height: 106px;
   background-color: #201F1D;
 }
+
+@media screen and (max-width: 767px) {
+  .separator-block {
+
+    height: 53px;
+  }
+}

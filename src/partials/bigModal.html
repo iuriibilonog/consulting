@@ -1,28 +1,32 @@
 <section>
   <div class="backdrop is-hidden" data-bigModal>
+    <div class="left-side">
+      <a href="/">
+        <img src="images/logo.png" alt="logo" class="logoModal">
+      </a>
+    </div>
     <div class="bigModal">
       <button class="close-modal" type="button" data-bigModal-close>
         <svg class="close-modal-icon" width="11px" height="11px">
           <use href="./images/sprite.svg#icon-cross"></use>
         </svg>
+        
       </button>
-        <h3 class="modal-title">Укажите, пожалуйста, Ваши данные</h3>
-        <form class="bigModal-form" id="formElem">
-          <input type="text" class="input-modal" placeholder="Имя" required>
-          <input type="number" class="input-modal" placeholder="Телефон" required>
-          <input type="email" class="input-modal" placeholder="Email" required>
+        <h3 class="modal-title" data-bigModal-title>Укажите, пожалуйста, Ваши данные</h3>
+        <form class="bigModal-form" data-bigForm>
+          <input type="text" class="input-modal" name="name" placeholder="Имя" required data-bigName>
+          <input type="number" class="input-modal" name="phone" placeholder="Телефон" required data-bigNumber>
+          <input type="email" class="input-modal" name="email" placeholder="Email" required data-bigEmail>
           <div class="check-rules">
-            <input class="check-box" type="checkbox">
+            <input class="check-box" type="checkbox" name="chechbox" required data-bigCheckbox>
             <span class="rules">Я согласен(-на) на обработку персональных данных</span>
           </div>
-          <button type="submit" class="submit-bigModal">Заказать звонок</button>
+          <button type="submit" class="submit-bigModal" data-bigSubmit>Заказать звонок</button>
         </form>
+        <div class="send-message"></div>
 
       
-      <!-- <iframe class="hero__video" width="560" height="315" src="https://www.youtube.com/embed/-8MPE74pq4w"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe> -->
+      
 
     </div>
   </div>

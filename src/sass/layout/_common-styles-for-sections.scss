@@ -1,10 +1,16 @@
 .container-section {
   margin: 0 55px 0 0;
   display: flex;
+  
+  
 }
 
 .nav-item-link.active {
   color: #C7B79E;
+}
+
+.right-side-mobile {
+  display: none;
 }
 
 
@@ -12,7 +18,7 @@
 .left-side-section {
   display: flex;
   width: calc(100vw / 2);
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   transform: translateX(-100%);
 
 }
@@ -95,6 +101,10 @@
   margin-left: 90px;
 }
 
+.left-side-mobile-number {
+  display: none;
+}
+
 .section-title {
   margin-top: 100px;
   font-family: 'Open Sans',
@@ -116,6 +126,8 @@
 .section-ellipses {
   margin-top: 291px;
 }
+
+
 
 .left-side-main-information {
   margin-top: 100px;
@@ -140,6 +152,8 @@
 }
 
 .plus-icon {
+  width:50px;
+  height: 50px;
   position: absolute;
   top: 0px;
   right: 17px;
@@ -205,8 +219,12 @@
 }
 
 .mouse-icon {
+  width: 26px;
+    height: 46px;
   cursor: pointer;
 }
+
+
 
 .radiowave {
   position: relative;
@@ -398,4 +416,301 @@
 
 
   color: #EFEDEE;
+}
+
+@media screen and (max-width: 767px) {
+  .left-side-decor, .left-side-logo {
+    display: none;
+  }
+
+    .right-side-section {
+      display: none;
+    }
+
+   .container-section {
+          margin: 0 0 0 0;
+          position: relative;
+          width: 100%;
+         
+        
+   }
+
+  .left-side-section {
+    width: calc(70% - 14px);
+  }
+
+  .left-side-elipses {
+    
+    margin-left: 22px;
+    width: 38px;
+      background-color: rgba(11, 11, 11, 0.7);
+  }
+
+    .left-side-mobile-number {
+      display: block;
+      transform: rotate(45deg);
+        margin-top: 155px;
+      
+      
+        white-space: nowrap;
+        font-family: 'Open Sans',
+          sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+      
+        letter-spacing: 0.2em;
+      
+        color: #EFEDEE;
+    }
+
+  .section-title {
+    margin-top: 80px;
+    margin-left: 10px;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+
+  .section-ellipses {
+    margin-left: 16px;
+    margin-top: 247px;
+  }
+
+    .left__main_part_item {
+      width: 6px;
+      height: 6px;
+    }
+
+    .left-side-main-information-title {
+      display: none;
+    }
+
+    .count {
+      margin-bottom: 0px;
+      font-size: 100px;
+      line-height: 136px;
+      
+    }
+
+    .plus-icon {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 15px;
+      right: 45px;
+    }
+
+    .count-title {
+  
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 100px;
+ 
+}
+
+.count-title.plan-title, .count-title.about-uz-title {
+  margin-bottom: 122px;
+}
+  
+  .left-side-main-information {
+     margin-top: 95px;
+     margin-left: 30px;
+    }
+   .section-question {
+          height: 99px;
+          max-width: 179px;
+          font-size: 24px;
+          line-height: 33px;
+         margin-bottom: 155px;
+        }
+
+  .toDo {
+    display: none;
+  }
+
+    @keyframes radio {
+      0% {
+        width: 14vw;
+        height: 14vw;
+      }
+  
+      20% {
+        opacity: 0.6;
+      }
+  
+      40% {
+        opacity: 0.4;
+      }
+  
+      60% {
+        opacity: 0.2;
+      }
+  
+      80% {
+        opacity: 0.1;
+      }
+  
+      100% {
+        width: 30vw;
+        height: 30vw;
+        opacity: 0;
+      }
+    }
+
+ .first-consultation {
+  margin-bottom: 60px;
+  line-height: 22px;
+ }
+
+ .right-side-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 856px;
+ 
+  
+   display: flex;
+  
+  
+   width: 59px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: auto;
+    overflow: hidden;
+  // transform: translateX(calc(100% - 59px));
+ 
+
+  .bodyFilter {
+    background-color: red;
+  }
+ 
+ }
+
+ .right-side-mobile.show {
+  width: 100%;
+  animation: appearenceRightSide 800ms linear forwards;
+  
+    @keyframes appearenceRightSide {
+      0% {
+        transform: translateX(calc(100% - 59px));
+        // opacity: 0.5;
+      }
+  
+      100% {
+        transform: translateX(0%);
+        transition: transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+ }
+
+//  .right-side-mobile.hide {
+//    animation: appearenceRightSide 800ms linear forwards;
+
+//    @keyframes appearenceRightSide {
+//      0% {
+//        transform: translateX(0%);
+//        // opacity: 0.5;
+//      }
+
+//      100% {
+//        transform: translateX(calc(100% - 59px));
+//        transition: transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+//      }
+//    }
+//  }
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.arrowWrapper {
+  margin: auto 0;
+}
+
+
+ .arrow-mobile {
+  margin-left: 14px;
+ }
+
+ .arrow-mobile-hide {
+  display: none;
+ }
+
+ .left-side-section.appearence.hidden {
+  opacity: 0 !important;
+  cursor: none !important;
+ }
+
+ .right-side-mobile-content {
+  margin-top: 55px;
+  width: 100%;
+ }
+
+ .right-side-mobile-content-title {
+// padding-top: 55px;
+  margin-left: 30px;
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+  
+  
+    color: #C7B79E;
+    text-transform: uppercase;
+  
+ }
+
+ .right-side-mobile-content-list {
+  margin-top: 97px;
+  margin-left: calc(100% - 330px);
+  
+  
+  
+ }
+
+ .right-side-mobile-content-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  width: 330px;
+  background-color: #0B0B0B;
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+  
+    letter-spacing: 0.02em;
+  
+    color: #EFEDEE;
+    text-transform: uppercase;
+ }
+
+ .right-side-mobile-content-item:not(:last-child) {
+  margin-bottom: 45px;
+ }
+
+ .right-side-mobile-content-item:last-child {
+  margin-bottom: 189px;
+ }
+ .right-side-mobile-content-item-link {
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .right-side-mobile-content-item-img {
+  margin-right: 18px;
+  width: 6px;
+    height: 6px;
+ }
+   
 }

@@ -4,11 +4,20 @@
   display: flex;
   justify-content: space-between;
   color: #EFEDEE;
+  
 }
 
+
+
 .header {
+  position: relative;
   height: 106px;
-  background: #201F1D;
+  background-color: #201F1D;
+  
+}
+
+.burger {
+  display: none;
 }
 
 .left-side {
@@ -61,4 +70,121 @@ margin-top: 23px;
 
 .nav-item:not(:last-child) {
   margin-right: 40px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .container {
+      margin: 0 35px 0 30px;
+    
+    }
+  
+  .nav {
+    display: none;
+  }
+
+  .header-contacts {
+    display: none;
+  }
+
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+
+    
+
+    .menu {
+      position: fixed;
+      top: 105px;
+      right: 0;
+      background-color: #201F1D;
+      z-index: 99999;
+     
+      transform: translateX(100%);
+      width: 67%;
+    }
+
+    // .menu.is-hidden {
+    //   transform: translateX(100%);
+    //   opacity: 0;
+    // }
+
+    .menu.appearenceMenu {
+      animation: appearenceMenu 500ms linear forwards;
+      
+        @keyframes appearenceMenu {
+          0% {
+            transform: translateX(50%);
+            opacity: 0.5;
+          }
+      
+          100% {
+            transform: translateX(0%);
+            transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 1
+          }
+        }
+    }
+
+    .menu-list {
+      margin-top: 30px;
+      margin-left: 32px;
+      margin-bottom: 159px;
+    }
+
+    .menu-list-item:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    .menu-list-item-link {
+      font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+      
+      
+        color: #EFEDEE;
+    }
+
+    .menu-btn {
+      margin-bottom: 62px;
+      padding: 10px 43px;
+      background-color: #C7B79E;
+      border: none;
+        border-radius: 5px;
+        color: white;
+      font-family: 'Open Sans',
+          sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        transform: scale(1);
+        cursor: pointer;
+      text-align: center;
+        transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+       
+       
+      
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+        }
+        // margin-left: 50%;
+        
+    }
+
+    .menu-social-list {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 52px;
+    }
+
+        
+          
+         
+        
 }
